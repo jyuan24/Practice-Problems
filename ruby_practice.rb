@@ -203,11 +203,52 @@
 #
 # does_not_contain_special 'testngString'
 
-def contain_special str
-    if str.include?("!") || str.include?('#') || str.include?('$')
-        p false
-    else
-        p true
-    end
-end
-contain_special 'testingAgain$#'
+# def contain_special str
+#     if str.include?("!") || str.include?('#') || str.include?('$')
+#         p false
+#     else
+#         p true
+#     end
+# end
+# contain_special 'testingAgain$#'
+
+
+
+# # Find the Odd Int
+# # https://www.codewars.com/kata/find-the-odd-int/train/ruby
+
+# def find_it(seq)
+#     count_hash = Hash.new 0
+#     seq.each do |num|
+#         count_hash[num.to_s] = seq.count(num)
+#     end
+#     count_hash.each do |key, value|
+#         if value % 2 != 0
+#             return key.to_i
+#         end
+#     end
+# end
+
+# p find_it([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]) # should return 5
+
+
+
+# # Build a Pile of Cubes
+# # https://www.codewars.com/kata/5592e3bd57b64d00f3000047/train/ruby
+
+# def find_nb(m)
+#     n_arr = [1]
+#     v = 0
+#     n_arr.each do |num|
+#         v += num**3
+#         if v > m
+#             return -1
+#         elsif v == m
+#             return n_arr.length
+#         else
+#             n_arr << num+1
+#         end
+#     end
+# end
+
+# p find_nb(4183059834009)
